@@ -1,0 +1,33 @@
+---
+const date = new Date();
+const year = date.getFullYear();
+---
+
+<html lang="fr">
+  <head>
+    <title>Portfolio - Junior Grégoire</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <main>
+      <h1>Portefolio de Junior Grégoire - Développeur web</h1>
+      <p>lorem ipsum</p>
+    </main>
+    <footer>&copy; {year}</footer>
+  </body>
+</html>
+
+<style is:global lang="scss">
+  body {
+    background-color: black;
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    h1, footer {
+      text-align: center; 
+    }
+  }
+
+</style>

@@ -1,4 +1,7 @@
 ---
+import Bloc from "../components/Bloc.astro";
+import NavBar from "../components/NavBar.astro";
+
 const date = new Date();
 const year = date.getFullYear();
 ---
@@ -10,21 +13,38 @@ const year = date.getFullYear();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <NavBar />
     <main>
-      <h1>Portefolio de Junior Grégoire - Développeur web</h1>
-      <p>lorem ipsum</p>
+      <h1>Portfolio de Junior Grégoire - Développeur web</h1>
+       
+      <Bloc title="Introduction"></Bloc>
+      
+      <Bloc title="Projects"></Bloc>
+        
+      <Bloc title="Contact"></Bloc>
+
     </main>
     <footer>&copy; {year}</footer>
   </body>
 </html>
 
 <style is:global lang="scss">
+
   body {
-    background-color: black;
+    background-image: linear-gradient(60deg, hsl(236, 80%, 20%), hsl(236, 100%, 0%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
     color: white;
+    
     width: 80%;
+
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2em;
+
     h1, footer {
       text-align: center; 
     }

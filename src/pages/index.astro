@@ -1,6 +1,6 @@
 ---
 import Bloc from "../components/Bloc.astro";
-import NavBar from "../components/NavBar.astro";
+import NavBar from "../components/NavBar.vue";
 
 const date = new Date();
 const year = date.getFullYear();
@@ -13,7 +13,7 @@ const year = date.getFullYear();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <NavBar />
+    <NavBar client:only="vue" />
     <main>
       <h1>Portfolio de Junior Grégoire - Développeur web</h1>
        
@@ -36,6 +36,8 @@ const year = date.getFullYear();
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    
+    font-size: 18px;
 
     color: white;
     

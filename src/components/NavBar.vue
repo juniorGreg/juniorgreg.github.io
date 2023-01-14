@@ -1,11 +1,18 @@
----
 
----
-<nav>
-  <a href="#Introduction">Introduction</a>
-  <a href="#Introduction">Introduction</a>
-</nav>
+<script lang="ts" setup>
+  import { ref } from 'vue';
+  const sections = [...document.getElementsByTagName("section")];
+  const sectionsIds = ref(sections.map((section) => section.id));
+  console.log(sectionsIds);
+</script>
 
+<template>
+  <nav>
+    <a v-for="id in sectionsIds" :href="`#${id}`">
+       {{ id }}
+      </a>
+  </nav>
+</template>
 <style lang="scss">
   nav {
     width: 100vw;

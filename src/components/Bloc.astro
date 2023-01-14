@@ -10,4 +10,9 @@ const { title } = Astro.props;
   </p>
 </section>
 
+<style lang="scss" is:global>
+  section:not(:first-of-type) {
+    padding-top: 5em;
+  }
+</style>
 

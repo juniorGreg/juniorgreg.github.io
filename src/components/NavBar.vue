@@ -7,38 +7,12 @@
 </script>
 
 <template>
-  <nav>
-    <a v-for="id in sectionsIds" :href="`#${id}`">
-       {{ id }}
+  <nav class="fixed top-0 left-0 bg-blue-500 w-full">
+    <div class="container mx-auto flex space-x-3 py-1">
+      <a v-for="id in sectionsIds" :href="`#${id}`" class="underline hover:decoration-4">
+         {{ id }}
       </a>
+    </div>
   </nav>
 </template>
-<style lang="scss">
-  nav {
-    width: 100vw;
-    height: 2em;
-    position: fixed;
-    top: 0;
-    left: 0;
 
-    padding-left: 10%;
-    padding-right: 10%;
-
-    background-color: hsla(236, 100%, 50%, 80%);
-
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    
-    a {
-      color: white;
-      text-decoration: none;
-      font-weight: 800;
-
-      &:hover, &:focus {
-        text-decoration: underline;
-      }
-    }
-
-  }
-</style>

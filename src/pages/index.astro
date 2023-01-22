@@ -12,10 +12,10 @@ const year = date.getFullYear();
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body class="container mx-auto mt-10 bg-gradient-to-br from-black to-blue-800 text-white">
     <NavBar client:only="vue" />
     <main>
-      <h1>Portfolio de Junior Grégoire - Développeur web</h1>
+      <h1 class="text-center text-5xl my-14">Portfolio de Junior Grégoire - Développeur web</h1>
        
       <Bloc title="Introduction"></Bloc>
       
@@ -24,32 +24,7 @@ const year = date.getFullYear();
       <Bloc title="Contact"></Bloc>
 
     </main>
-    <footer>&copy; {year}</footer>
+    <footer class="my-20 text-center text-sm">&copy; {year}</footer>
   </body>
 </html>
 
-<style is:global lang="scss">
-
-  body {
-    background-image: linear-gradient(60deg, hsl(236, 80%, 20%), hsl(236, 100%, 0%));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    
-    font-size: 18px;
-
-    color: white;
-    
-    width: 80%;
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-
-    h1, footer {
-      text-align: center; 
-    }
-  }
-
-</style>

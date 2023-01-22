@@ -4,7 +4,10 @@ import { defineConfig } from 'astro/config';
 import vue from "@astrojs/vue";
 
 // https://astro.build/config
+import tailwind from "@astrojs/tailwind";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://juniorgreg.github.io",
-  integrations: [vue()]
+  integrations: [vue(), tailwind()]
 });

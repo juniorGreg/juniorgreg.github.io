@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <nav class="fixed top-0 left-0 bg-blue-500 w-full">
+  <nav class="fixed top-0 left-0 bg-blue-500/50 w-full ">
     <div class="container mx-auto flex space-x-3 py-1">
       <a v-for="id in sectionsIds" :href="`#${id}`" class="underline hover:decoration-4">
          {{ id }}

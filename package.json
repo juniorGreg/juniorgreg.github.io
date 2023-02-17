@@ -18,6 +18,7 @@
     "vue": "^3.2.45"
   },
   "devDependencies": {
+    "eslint-plugin-vue": "^9.9.0",
     "sass": "^1.57.1"
   }
 }
